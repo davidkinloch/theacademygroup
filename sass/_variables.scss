@@ -5,7 +5,7 @@
 
 //== Colors
 //
-//## Gray and brand colors for use across Bootstrap.
+//## Gray and brand colors for use
 
 $brand-primary:         #428bca;
 $brand-success:         #5cb85c;
@@ -13,7 +13,7 @@ $brand-info:            #5bc0de;
 $brand-warning:         #f0ad4e;
 $brand-danger:          #d9534f;
 
-
+$grey:  #C6C6C8;
 //== Scaffolding
 //
 // ## Settings for some of the most global styles.
@@ -31,46 +31,10 @@ $link-hover-color:      darken($link-color, 15%);
 
 //== Typography
 //
-//## Font, line-height, and color for body text, headings, and more.
-@font-face {
-    font-family: 'quicksandbold';
-    src: url('../fonts/quicksand-bold-webfont.eot');
-    src: url('../fonts/quicksand-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/quicksand-bold-webfont.woff') format('woff'),
-         url('../fonts/quicksand-bold-webfont.ttf') format('truetype'),
-         url('../fonts/quicksand-bold-webfont.svg#quicksandbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'quicksandlight';
-    src: url('../fonts/quicksand-light-webfont.eot');
-    src: url('../fonts/quicksand-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/quicksand-light-webfont.woff') format('woff'),
-         url('../fonts/quicksand-light-webfont.ttf') format('truetype'),
-         url('../fonts/quicksand-light-webfont.svg#quicksandlight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'quicksandregular';
-    src: url('../fonts/quicksand-regular-webfont.eot');
-    src: url('../fonts/quicksand-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/quicksand-regular-webfont.woff') format('woff'),
-         url('../fonts/quicksand-regular-webfont.ttf') format('truetype'),
-         url('../fonts/quicksand-regular-webfont.svg#quicksandregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
 
 
-$font-family-sans-serif:  "quicksandLight", Helvetica, Arial, sans-serif;
-$font-family-serif:       Georgia, "Times New Roman", Times, serif;
+$font-family-sans-serif:  'Montserrat', sans-serif;
+$font-family-serif:       'Playfair Display', serif;
 
 $font-size-base:          16px;
 $font-size-large:         ceil(($font-size-base * 1.25)); // ~18px

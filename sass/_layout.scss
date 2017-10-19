@@ -1,13 +1,37 @@
 
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    font: 14px/1.4 $font-family-sans-serif;
+    text-align: center;
+    @include mq(desktop) {
+		font-size: 16px;
+	}
 }
 
 .wrapper {
     width: 90%;
     margin: 0 5%;
-	@include mq(tablet) {
-        width: 1026px; /* 1140px - 10% for margins */
-        margin: 0 auto;
-	}
+    max-width: 882px;
+    @include mq(desktop) {
+    	
+    	margin: 0 auto;
+    }
+}
+
+h1 {
+	margin-bottom: 25px;
+}
+
+p {
+	margin-bottom: 25px;
+}
+
+.button {
+	display: inline-block;
+	font-size: 	1.143em;
+	font-weight: 400;
+	text-decoration: none;
+	color: #333;
+	padding: 10px 18px;
+	border: 1px solid #888;
+	margin: 0 auto 35px;
 }

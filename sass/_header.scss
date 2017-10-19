@@ -1,0 +1,37 @@
+.header {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background: $grey;
+	float: left;
+	margin-bottom: 35px;
+	transition: all .3s ease-in-out;
+	@include mq(desktop) {
+		height: 72px;
+	}
+	&__inner {
+		height: 100%;
+	}
+	&__logo {
+		display: block;
+		background: url(../assets/build/mobile-logo.png) no-repeat;
+		width: 111px;
+		height: 10px;
+		background-size: 111px 10px;
+		text-indent: -9999px;
+		 position: relative;
+  		top: 50%;
+  		left: 50%;
+  		transform: translateY(-50%) translateX(-50%);
+		float: none;
+		transition: all .3s ease-in-out;
+		@include mq(desktop) {
+			width: 154px;
+			height: 14px;
+			background-size: 154px 14px;
+			left: 0;
+			transform: translateY(-50%) translateX(0%);
+		}
+	}
+}
