@@ -12,7 +12,7 @@
 		padding: 64px 45px;
 	}
 	&__block--image {
-		height: 100vh;
+		height: 75vh;
 		background: center center no-repeat;
 		background-size: cover;
 		@include mq(desktop) {
@@ -108,6 +108,9 @@
 	&--padded {
 		.section__block {
 			background: $white;
+			&:first-child {
+				padding-bottom: 0;
+			}
 		}
 		.section__block--image {
 			height: auto;
