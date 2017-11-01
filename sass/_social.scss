@@ -1,0 +1,26 @@
+.social {
+	&__item {
+		display: inline-block;
+		font-size: 2rem;
+	}
+	&__link {
+		margin-right: $margin;
+		.fa {
+			@include transition (all .3s ease-in-out);
+			&:hover {
+				color: #5f7ec1;
+			}
+			&-twitter {
+				&:hover {
+					color: #3bc9ff;
+				}
+			}
+			&-instagram {
+				&:hover {
+					color: #ed8397;
+				}
+			}
+		}
+
+	}
+}

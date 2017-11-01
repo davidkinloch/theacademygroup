@@ -1,0 +1,67 @@
+.footer {
+	background-color: $dark-grey;
+	color: $white;
+	padding: 64px 45px;
+	text-align: left;
+	display: flex;
+	flex-flow: row wrap;
+	h3 {
+		margin-bottom: $margin-typo;
+		font-size: 2rem;
+		font-family: $font-family-sans-serif;
+		line-height: 1;
+		@include mq(desktop) {
+			margin-bottom: $margin-typo-desktop;
+		}
+	}
+	p {
+		@include mq(desktop) {
+			margin-bottom: $margin-typo-desktop;
+		}
+	}
+	.button {
+		border-color: $white;
+		&:hover {
+			background-color: $white;
+			color: $dark-grey;
+		}
+		@include mq(desktop) {
+			margin-bottom: $margin-typo-desktop;
+		}
+	}
+	a {
+		color: $white;
+		&:hover {
+			color: lighten($light-blue, 40%);
+		}
+	}
+	&__logo {
+		display: block;
+		max-width: 392px;
+		height: auto;
+		margin-bottom: $margin-typo;
+		@include mq(desktop) {
+			margin-bottom: $margin-typo-desktop;
+		}
+	}
+	&__block {
+		flex: 1 100%;
+		&:nth-child(1) {
+			flex: 1 100%;
+			margin-bottom: $margin-typo-desktop;
+			@include mq(desktop) {
+				flex: 1 50%;
+				padding-right: $margin-typo-desktop;
+				margin-bottom: 0;
+			}
+		}
+		&:nth-child(2), &:nth-child(3) {
+			@include mq(tablet) {
+				flex: 1 50%;
+			}
+			@include mq(desktop) {
+				flex: 1 25%;
+			}
+		}
+	}
+}

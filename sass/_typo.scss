@@ -4,3 +4,47 @@ h1, h2, h3, h4, h5 {
 img {
 	width: 100%;
 }
+
+h1 {
+	font-size: 2rem;
+	margin-bottom: $margin-typo;
+}
+
+h2 {
+	font-size: 2rem;
+	margin-bottom: $margin-typo;
+}	
+
+p {
+	margin-bottom: $margin-typo;
+}
+
+a {
+	text-decoration: none;
+	color:$blue;
+	@include transition (all .3s ease-in);
+	&:hover {
+		color: $light-blue;
+	}
+}
+.button {
+	display: inline-block;
+	font-size: 	1.143rem;
+	font-weight: 400;
+	text-decoration: none;
+	color: $text-color;
+	padding: 10px 18px;
+	border: 1px solid $text-color;
+	margin: 0 auto $margin-typo;
+	&:hover {
+		background: $text-color;
+		color: $white;
+	}
+}
+
+::-moz-selection {
+	background: lighten($blue, 70%);
+}
+::selection {
+	background: lighten($blue, 70%);
+} 
