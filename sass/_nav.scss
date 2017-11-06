@@ -15,7 +15,7 @@
 		.fixed & {
 			@include mq(mobile,tablet) {
 				position: fixed;
-				height: 100vh;
+				height: calc(100vh - 42px);
 			}
 		}
 	}
