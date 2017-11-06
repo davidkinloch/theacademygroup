@@ -12,6 +12,7 @@ html {
     font: 14px/1.4 $font-family-sans-serif;
     text-align: center;
     background: $grey;
+    font-weight: 300;
     @include mq(desktop) {
         font-size: 16px;
     }

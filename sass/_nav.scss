@@ -7,9 +7,9 @@
 	z-index: 8888;
 	&.active {
 		@include transition (all 1s ease-in-out);
-		@include transform (translate(0px, 50px));
+		@include transform (translate(0px, 42px));
 		@include mq(desktop) {
-			@include transform (translate(0px, 70px));	
+			@include transform (translate(0px, 60px));	
 		}
 	}
 	&__toggle {
