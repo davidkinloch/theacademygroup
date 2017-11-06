@@ -13,6 +13,12 @@
 		height: 60px;
 		line-height: 60px;
 	}
+	.fixed & {
+		@include mq(mobile,tablet) {
+			position: fixed;
+			top: 0;
+		}
+	}
 	&__inner {
 		height: 100%;
 		margin: 0;

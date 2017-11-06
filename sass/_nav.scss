@@ -5,11 +5,18 @@
 	left: 0;
 	width: 100%;
 	z-index: 8888;
+	background-color: $white;
 	&.active {
 		@include transition (all 1s ease-in-out);
 		@include transform (translate(0px, 42px));
 		@include mq(desktop) {
 			@include transform (translate(0px, 60px));	
+		}
+		.fixed & {
+			@include mq(mobile,tablet) {
+				position: fixed;
+				height: 100vh;
+			}
 		}
 	}
 	&__toggle {
@@ -103,22 +110,28 @@
 		width: 100%;
 		z-index: 8888;
 		float: left;
-		background-color: white;
+		@include mq(mobile,tablet) {
+			top: 25%;
+ 			transform: translateY(-25%);
+		}
 	}
 	&__close {
-		display: block;
-		float: left;
-		height: 15px;
-		width: 100%;
-		background: $light-grey;
-		content: '^';
-		color: $text-color;
-		line-height: 15px;
-		cursor: pointer;
-		@include transition (all .3s ease-in);
-		&:hover {
-			background-color: darken($grey, 10%);
-			color: $light-blue; 
+		display: none;
+		@include mq(tablet) {
+			display: block;
+			float: left;
+			height: 15px;
+			width: 100%;
+			background: $light-grey;
+			content: '^';
+			color: $text-color;
+			line-height: 15px;
+			cursor: pointer;
+			@include transition (all .3s ease-in);
+			&:hover {
+				background-color: darken($grey, 10%);
+				color: $light-blue; 
+			}
 		}
 	}
 	&__item {
