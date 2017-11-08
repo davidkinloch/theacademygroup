@@ -21,6 +21,10 @@
 			padding-bottom: 56.25%;
 		}
 	}
+	&__form {
+			background: $dark-grey;
+			padding: 64px 45px;
+	}
 	&--hero {
 		height: 100vh;
 		width: 100vw;
@@ -226,6 +230,5 @@
 		.section__text {
 			text-align: center;
 		}
-		
 	}
 }
