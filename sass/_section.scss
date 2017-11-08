@@ -34,17 +34,33 @@
 			transform: translateY(-100%) translateX(-50%);
 			background: transparent;
 			text-align: center;
-		}	
+		}
+		.subtitle {
+			font-size: 1.6rem;
+			color: $white;
+		}
+		.title {
+			font-size: 3rem;
+			color: $white;
+		}
 	}
 	&--split {
-		@include mq(desktop) {
-			display: flex;
-			flex-flow: row wrap;
-		}
+		
+		display: flex;
+		flex-flow: row wrap;
 		.section__block {
 			position: relative;
+			flex: 1 100%;
 			@include mq(desktop) {
 				flex: 1 50%;
+			}
+			@include mq($from: mobile, $until: desktop) {
+					order:2;
+				}
+			&--image {
+				@include mq($from: mobile, $until: desktop) {
+					order:1;
+				}
 			}
 		}
 		.section__text {
@@ -55,8 +71,32 @@
 				transform: translateY(-50%) translateX(-50%);
 			}
 		}
+		&.section--blue {
+			.section__block {
+				background-color: $blue;
+				color: $white;
+			}
+		}
+		&.section--inverse {
+			.section__block:first-child {
+				@include mq(desktop) {
+					order:2;
+				}	
+			}
+		}
 	}
 	&--overlay {
+		@include mq($from: mobile, $until: desktop) {
+			display: flex;
+			flex-flow: row wrap;
+			.section__block {
+				flex: 1 100%;
+				order:2;
+				&--image {
+					order:1;
+				}
+			}
+		}
 		&.section--blue {
 			.section__block {
 				@include mq($from: mobile, $until: desktop) {
@@ -109,12 +149,10 @@
 	&--padded {
 		.section__block {
 			background: $white;
-			&:first-child {
-				padding-bottom: 0;
-			}
 		}
 		.section__block--image {
 			height: auto;
+			padding-bottom: 0;
 			@include mq(desktop) {
 				padding: 64px 45px;
 			}
@@ -134,5 +172,60 @@
 
 			}
 		}
+	}
+	&--charcoal {
+		.section__block {
+			background-color: $dark-grey;
+			color: $light-grey;
+			h2 {
+				color: $white;
+			}
+		}
+		.button {
+			border-color: $white;
+			color: $white;
+			&:hover {
+				background-color: $white;
+				color: $dark-grey;
+			}
+		}
+	}
+	&--brown {
+		.section__block {
+			background-color: $brown;
+			color: $white;
+		}
+		.button {
+			border-color: $white;
+			color: $white;
+			&:hover {
+				background-color: $white;
+				color: $brown;
+			}
+		}
+	}
+	&--dark-brown {
+		.section__block {
+			background-color: $dark-brown;
+			color: $white;
+		}
+		.button {
+			border-color: $white;
+			color: $white;
+			&:hover {
+				background-color: $white;
+				color: $dark-brown;
+			}
+		}
+	}
+	&--quote {
+		background: $white;
+		font-size: 1.25rem;
+		font-weight: 400;
+		text-align: center !important;
+		.section__text {
+			text-align: center;
+		}
+		
 	}
 }

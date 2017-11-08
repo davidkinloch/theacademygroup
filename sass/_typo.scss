@@ -32,6 +32,22 @@ strong {
 	font-weight: 400;
 }
 
+blockquote {
+	font-family: $font-family-sans-serif;
+	font-size: 1.25rem;
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: $margin-typo;
+}
+
+.subtitle {
+	font-family: $font-family-sans-serif;
+	font-size: 1.25rem;
+	font-weight: 400;
+	margin-bottom: 0;
+	
+}
+
 .button {
 	display: inline-block;
 	font-size: 	1.143rem;
@@ -41,6 +57,7 @@ strong {
 	padding: 10px 18px;
 	border: 1px solid $text-color;
 	margin: 0 auto $margin-typo;
+	text-align: center;
 	&:hover {
 		background: $text-color;
 		color: $white;
