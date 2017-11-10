@@ -9,7 +9,7 @@
 		}
 	}
 	&__block {
-		background: $lighter-grey;
+		background-color: $lighter-grey;
 		padding: 64px 45px;
 	}
 	&__block--image {
@@ -21,9 +21,12 @@
 			padding-bottom: 56.25%;
 		}
 	}
-	&__form {
-			background: $dark-grey;
+	&__form {	
 			padding: 64px 45px;
+			background-color: #FFF;
+			&--charcoal {
+				background-color: $dark-grey;
+			}
 	}
 	&--hero {
 		height: 100vh;
@@ -131,6 +134,9 @@
 				height: 100%;
 				background: transparent;
 				color: $white;
+				.section--inverse & {
+					left: 0;
+				}
 				.button {
 					color: $white;
 					border-color: $white;
@@ -149,10 +155,17 @@
 				}
 			}
 		}
+		&.section--inverse {
+			@include mq(desktop) {
+				.section__block:first-child {
+					left: 0;
+				}
+			}
+		}
 	}
 	&--padded {
 		.section__block {
-			background: $white;
+			background-color: $white;
 		}
 		.section__block--image {
 			height: auto;
@@ -160,6 +173,15 @@
 			@include mq(desktop) {
 				padding: 64px 45px;
 			}
+		}
+	}
+	&--quote {
+		background-color: $white;
+		font-size: 1.25rem;
+		font-weight: 400;
+		text-align: center !important;
+		.section__text {
+			text-align: center;
 		}
 	}
 	&--grey {
@@ -222,13 +244,11 @@
 			}
 		}
 	}
-	&--quote {
-		background: $white;
-		font-size: 1.25rem;
-		font-weight: 400;
-		text-align: center !important;
-		.section__text {
-			text-align: center;
+	&--white {
+		background-color: #FFF;
+		.section__block {
+			background-color: #FFF;
 		}
 	}
+	
 }
