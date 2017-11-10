@@ -102,6 +102,9 @@
 		@include mq(desktop) {
 			display: block;
 			font-size: .8rem;
+			&:last-child {
+				margin-bottom: 0;
+			}
 		}
 	}
 }
