@@ -188,6 +188,9 @@
 		text-align: center !important;
 		.section__text {
 			text-align: center;
+			p:last-child {
+				margin: 0;
+			}
 		}
 	}
 	&--grey {
