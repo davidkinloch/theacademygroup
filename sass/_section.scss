@@ -55,6 +55,7 @@
 		
 		display: flex;
 		flex-flow: row wrap;
+		text-align: left;
 		.section__block {
 			position: relative;
 			flex: 1 100%;
@@ -71,6 +72,11 @@
 			}
 		}
 		.section__text {
+			h4 {
+				font-family: $font-family-sans-serif;
+				font-size: 1.25rem;
+				font-weight: 400;
+			}
 			@include mq(desktop) {
 				position: absolute;
 				top: 50%;

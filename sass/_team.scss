@@ -1,0 +1,63 @@
+.team {
+	padding: 45px 45px 0;
+	&__list {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		&--more {
+			display: none;
+			&.active {
+				display: flex;
+			}
+		}
+	}
+	&__item {
+		flex: 1 100%;
+		@include transition (all .3s ease-in-out);
+		@include mq(tablet,desktop) {
+			flex: 1 50%;
+			&:nth-child(odd) {
+				padding-right: 5px;
+			}
+			&:nth-child(even) {
+				padding-left: 5px;
+			}
+		}
+		@include mq(desktop) {
+			flex: 1 33%;
+			&:nth-child(3n+1) {
+				padding-right: 6px;
+			}
+			&:nth-child(3n+2) {
+				padding-right: 3px;
+				padding-left: 3px
+			}
+			&:nth-child(3n+3) {
+				padding-left: 6px;
+			}
+		}
+	}
+	&__photo {
+		margin-bottom: $margin-typo;
+	}
+	&__name {
+		font-family: $font-family-sans-serif;
+		font-size: 1.25rem;
+		font-weight: 400;
+	}
+	&__role {
+		font-family: $font-family-sans-serif;
+		font-size: 1rem;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	&__more {
+		display: inline-block;
+		font-family: $font-family-sans-serif;
+		font-size: 1.5rem;
+		font-weight: 400;
+		&.destroy {
+			display: none;
+		}
+	}
+}
