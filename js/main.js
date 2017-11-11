@@ -16,4 +16,12 @@ $(function() {
         $('.team__list--more').addClass('active');
         $(this).addClass('destroy');
      });
+    $('.faqs__list').isotope({
+      itemSelector: '.faqs__item',
+      percentPosition: true,
+      masonry: {
+        // use outer width of grid-sizer for columnWidth
+        columnWidth: '.faqs__item'
+      }
+    })
 });
