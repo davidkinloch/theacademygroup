@@ -1,8 +1,8 @@
 .info {
 	position:relative;
-	width: 300px;
+	width: 240px;
 	margin: $margin-typo-desktop auto 0;
-	height: 600px;
+	height: 470px;
 	@include mq(desktop) {
 		width: 500px;
 	}
@@ -25,8 +25,8 @@
 	&__item {
 		position: relative;
 		background: $darkish-grey;
-		width: 150px;
-		height: 150px;
+		width: 120px;
+		height: 120px;
 		border-radius: 50%;
 		margin-bottom:  $margin-typo;
 		float: left;

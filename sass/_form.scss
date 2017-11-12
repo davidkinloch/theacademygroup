@@ -2,6 +2,27 @@
 	max-width: 450px;
 	margin: 0 auto;
 	font-size: 1rem;
+	&--big {
+		max-width: 768px;
+		@include mq(tablet) {
+			display: flex;
+			flex-flow: row wrap;
+		}
+	}
+	&__left {
+		@include mq(tablet) {
+			flex: 1 50%;
+			padding-right: 10px;
+		}
+	}
+	&__right {
+		@include mq(tablet) {
+			flex: 1 1 50%;
+			.form__input--message {
+				height: calc(100% - 10px);
+			}
+		}
+	}
 	&__label {
 		display: none;
 	}

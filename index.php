@@ -1,58 +1,4 @@
-<!DOCTYPE html>
-    <html> 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Academy Group Wireframe</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/png" href="http://realfavicongenerator.net/">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900|Playfair+Display:400,700,900" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/main.css" />
-        
-    </head>
-    <body>
-        <div class="header">
-            <header class="header__inner wrapper">
-                <a href="#" class="header__logo">Academy Group</a>
-                <a href="#" class="nav__toggle" aria-hidden="false">
-                    <span>Menu</span>
-                </a>  
-                <a href="#" class="header__apply">Apply</a> 
-            </header>
-        </div>
-
-        <nav class="nav">
-            <ul class="nav__menu">
-                <li class="nav__item">
-                    <a class="nav__link" href="#">Home</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="#">Students</a>
-                </li><!-- end of parent item -->
-                <li class="nav__item">
-                    <a class="nav__link" href="#">Programs</a>
-                </li> 
-                <li class="nav__item">
-                    <a class="nav__link" href="#">Staff</a>
-                </li> 
-                <li class="nav__item">
-                    <a class="nav__link" href="#">Companies &amp; Partners</a>
-                </li> 
-                <li class="nav__item">
-                    <a class="nav__link" href="#">QA</a>
-                </li> 
-                <li class="nav__item">
-                    <a class="nav__link" href="#">Apply</a>
-                </li>       
-            </ul>
-            <div class="nav__close">
-                <i class="fa fa-angle-up"></i>
-            </div>
-        </nav>
-        
-         <div class="main-container">
-            <div class="main clearfix">
+<?php include 'header.php'; ?>
 
                 <div class="section section--hero" style="background-image: url(assets/build/home-hero.jpg);">
                         <div class="section__text">
@@ -473,7 +419,7 @@
                 </div><!-- section -->
                     
 
-                <!-- PROGRAMS -->
+                <!-- STAFF -->
                 <div class="section section--hero" style="background-image: url(assets/build/team-hero.jpg);">
                         <div class="section__text">
                             <h2 class="subtitle">Academy Staff</h2>
@@ -634,8 +580,70 @@
                     </div>
                 </div><!-- section -->
 
+                <!-- COMPANIES -->
+                <div class="section section--hero" style="background-image: url(assets/build/company-hero.jpg);">
+                    <div class="section__text">
+                        <h2 class="subtitle">Academy Companies &amp; Partners</h2>
+                        <h1 class="title">Guaranteed to Succeed</h1>
+                    </div>
+                </div><!-- section -->
+                
+                <div class="section section--split">
+                    <div class="section__block">
+                        <div class="section__text">
+                            <div class="cms__text cms__text--large">
+                                <p>The Academy will prepare a new generation of innovators and leaders to make a lasting impact across the nation. As we do so, we will build a model for how the commercial and social sectors can partner to create robust paths to success for thousands of young people.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section__block section__block--image" style="background-image: url(assets/build/company-01.jpg);">
+                        <div class="section__image img-holder">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section section--split section--inverse section--brown">
+                    <div class="section__block">
+                        <div class="section__text">
+                            <div class="cms__text cms__text--large">
+                                <p>We are actively seeking out and evaluating new investment opportunities as we continue to grow our portfolio of Academy Companies.  We expect to be in 10 to 15 sectors over time.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section__block section__block--image" style="background-image: url(assets/build/company-02.jpg);">
+                        <div class="section__image img-holder">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section section--overlay section--fullwidth">
+                    <div class="section__block">
+                        <div class="section__text">
+                            <div class="cms__text cms--large">
+                                <p><strong>Our goal over the next decade is to establish programs in cities across the nation, serving up to 17,000 exceptional young people.</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section__block section__block--image" style="background-image: url(assets/build/company-03.jpg);">
+                        <div class="section__image img-holder">
+                        </div>
+                    </div>
+                </div><!-- section -->
+
+                <div class="section section--split section--padded">
+                    <div class="section__block">
+                        <div class="section__text">
+                            <h2>Look at some of the common questions we get asked</h2>
+                            <a href="#" class="button">Curious to Learn More?</a>
+                        </div>
+                    </div>
+                    <div class="section__block section__block--image">
+                        <img src="assets/build/team-more.jpg" alt="#" />
+                    </div>
+                </div><!-- section -->
+
                 <!-- QA -->
-                <div class="section section--hero" style="background-image: url(assets/build/team-hero.jpg);">
+                <div class="section section--hero" style="background-image: url(assets/build/faq-hero.jpg);">
                     <div class="section__text">
                         <h2 class="subtitle">FAQ</h2>
                         <h1 class="title">Curious to find out more?</h1>
@@ -725,51 +733,51 @@
                         <img src="assets/build/home-06.jpg" alt="#" />
                     </div>
                 </div><!-- section -->
-            </div> <!-- #main -->
-        </div> <!-- #main-container -->
 
-        <div class="footer">
-            <div class="footer__block">
-                <img class="footer__logo" src="assets/build/footer-logo.png" alt="The Academy Group">
-                <p>The Academy is a unique enterprise founded to realize the true potential of young people from underserved communities across the United States. Designed to tap into the deep well of overlooked talent that exists nationwide, the Academy empowers youth to thrive in school, work and life.</p>
-                <a href="#" class="button button--inverse">Curious To Learn More?</a>
-            </div>
-            <div class="footer__block">
-                <h3>Get In Touch</h3>
-                <p><a href="#">theacademy.group</a></p>
-                <p><a href="mailto:info@theacademy.group">theacademy.group</a></p>
-                <p><a href="tel:312964004">312-964-004</a></p>
-            </div>
-            <div class="footer__block">
-                <h3>Follow us on Social Media</h3>
-                <ul class="social">
-                    <li class="social__item">
-                        <a href="#" class="social__link"><i class="fa fa-facebook-square"></i></a>
-                    </li>
-                    <li class="social__item">
-                        <a href="#" class="social__link"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li class="social__item">
-                        <a href="#" class="social__link"><i class="fa fa-instagram"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-     
+                 <!-- APPLY -->
+                <div class="section section--hero" style="background-image: url(assets/build/apply-hero.jpg);">
+                    <div class="section__text">
+                        <h2 class="subtitle">Apply</h2>
+                        <h1 class="title">Step Up</h1>
+                    </div>
+                </div><!-- section -->
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+                <div class="section section--center section--white">
+                    <div class="section__block">
+                        <div class="section__text">
+                            <h2>Take the first step to becoming exceptional</h2>
+                            <p><strong>Thank you for your interest in the Academy</strong></p>
+                            <p>We are fully enrolled for 2017.  If you would like to register your interest or find out more information on how to participate in the Academy beginning in 2018 please fill out the form below or send us an email directly at <a href="mailto:info@theacademy.group">info@theacademy.group</a>.</P>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <div class="section__block">
+                        <div class="section__form section__form--lightergrey">
+                            <form class="form form--big">
+                                <div class="form__left">
+                                    <div class="form__group">
+                                        <label class="form__label">Name</label>
+                                        <input class="form__input" type="text" placeholder="Name" />
+                                    </div>
+                                    <div class="form__group">
+                                        <label class="form__label">Email</label>
+                                        <input class="form__input" type="text" placeholder="Email" />
+                                    </div>
+                                    <div class="form__group">
+                                        <label class="form__label">Subject</label>
+                                        <input class="form__input" type="text" placeholder="Subject" />
+                                    </div>
+                                </div>
+                                <div class="form__right">
+                                    <input class="form__input form__input--message" type="message" placeholder="Message" name="" />
+                                </div>
+                                <a class="form__submit" href="#">Submit</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
 
-        <script src="js/build/production.min.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
-    </body>
-</html>
+<?php include 'footer.php'; ?>
+        
