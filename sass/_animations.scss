@@ -12,7 +12,8 @@
 }
 .section--hero {
 	opacity: 0;
-	@include transition (opacity .6s ease-in-out);
+	background-attachment: fixed;
+	@include transition (opacity 1s ease-in-out);
 	&.animated {
 		opacity: 1;
 	}
@@ -20,7 +21,7 @@
 
 .header {
 	transform: translateY(-100px) translateX(0px);
-	@include transition (transform .6s ease-in-out .3s);
+	@include transition (transform .6s ease-in-out .6s);
 	&.animated {
 		transform: translateY(0px) translateX(0px);
 	}
