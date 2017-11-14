@@ -6,7 +6,7 @@
 	background: $grey;
 	float: left;
 	margin-bottom: 35px;
-	@include transition (all .3s ease-in-out);
+	//@include transition (all .3s ease-in-out);
 	z-index: 9999;
 	position: relative;
 	@include mq(desktop) {
@@ -16,7 +16,7 @@
 	.fixed & {
 		@include mq(mobile,tablet) {
 			position: fixed;
-			top: 0;
+	//		top: 0;
 		}
 	}
 	&__inner {

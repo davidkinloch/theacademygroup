@@ -1,6 +1,6 @@
 .nav {
 	@include transition (all .3s ease-in-out);
-	@include transform (translate(0px, -90%));
+	@include transform (translate(0px, -100%));
 	position: absolute;
 	left: 0;
 	width: 100%;

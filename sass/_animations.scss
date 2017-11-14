@@ -1,0 +1,27 @@
+.section__block {
+	opacity: 0;
+	transform: translateY(50px) translateX(0px) translate3d(0,0,0);
+	@include transition (all .6s ease-in-out);
+	&.animated {
+		opacity: 1;
+		transform: translateY(0px) translateX(0px) translate3d(0,0,0);
+	}
+	.section--overlay & {
+		z-index: 10;
+	}
+}
+.section--hero {
+	opacity: 0;
+	@include transition (opacity .6s ease-in-out);
+	&.animated {
+		opacity: 1;
+	}
+}
+
+.header {
+	transform: translateY(-100px) translateX(0px);
+	@include transition (transform .6s ease-in-out .3s);
+	&.animated {
+		transform: translateY(0px) translateX(0px);
+	}
+}
