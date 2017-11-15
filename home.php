@@ -1,5 +1,5 @@
 <?php include 'header.php'; ?>
-    <div class="section section--hero" style="background-image: url();">
+    <div class="section section--hero" style="background-image: url(assets/build/home-hero.jpg);">
         <div class="section__text">
             <img class="section__logo" src="assets/build/home-logo.png" alt="The Academy" />
         </div>  
