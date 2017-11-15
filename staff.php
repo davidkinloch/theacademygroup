@@ -1,6 +1,6 @@
 <?php include 'header.php'; ?>
 <!-- STAFF -->
-                <div class="section section--hero" style="background-image: url(assets/build/team-hero.jpg);">
+                <div class="section section--hero" style="background:#011142;">
                         <div class="section__text">
                             <h2 class="subtitle">Academy Staff</h2>
                             <h1 class="title">Game Changers</h1>
@@ -18,7 +18,7 @@
 
                 <div class="section section--split section--blue">
                     <div class="section__block">
-                        <div class="section__text">
+                        <div class="section__text" style="width:76%">
                             <div class="cms__text">
                                 <h2>Shayne Evens</h2>
                                 <h4>Founder<br>Managing Partner</h4>
@@ -27,7 +27,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="section__block section__block--image" style="background-image: url(assets/build/team-shayne-evans.jpg);">
+                    <div class="section__block section__block--image" style="background:#011142;">
                         <div class="section__image img-holder">
                         </div>
                     </div>
@@ -35,7 +35,7 @@
 
                 <div class="section section--split section--inverse section--grey">
                     <div class="section__block">
-                        <div class="section__text">
+                        <div class="section__text" style="width:70%">
                             <div class="cms__text">
                                 <h2>Timothy Knowles</h2>
                                 <h4>Founder<br>Managing Partner</h4>

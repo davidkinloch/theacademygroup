@@ -1,9 +1,9 @@
 <?php include 'header.php'; ?>
-    <div class="section section--hero" style="background-image: url(assets/build/home-hero.jpg);">
-                        <div class="section__text">
-                            <img class="section__logo" src="assets/build/home-logo.png" alt="The Academy" />
-                        </div>  
-                </div><!-- section -->
+    <div class="section section--hero" style="background-image: url();">
+        <div class="section__text">
+            <img class="section__logo" src="assets/build/home-logo.png" alt="The Academy" />
+        </div>  
+    </div><!-- section -->
                 
                 <div class="section section--split">
                     <div class="section__block">
@@ -49,7 +49,7 @@
                             <a href="#" class="button">Find Out About Our Educators</a>
                         </div>
                     </div>
-                    <div class="section__block section__block--image" style="background-image: url(assets/build/home-04.jpg);">
+                    <div class="section__block section__block--image" style="background:#011142;">
                         <div class="section__image img-holder">
                         </div>
                     </div>
